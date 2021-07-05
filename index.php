@@ -12,7 +12,6 @@
 	}
 	require_once 'PDOConnectionDB.php';  //連結資料庫
 	//echo phpinfo();
-	//echo ExportHtmlPage_Fun('12131');
 	//$SelectItem_Array = Array( 'V:1D:病假' , 'V:2D:事假' , 'V:3D:生理假' , 'V:4D:喪假' );
 	$SelectItem_Array = Array( 'test1' , 'test2' , 'test3' );
 	$SelectItem_Arr = Array(  'Tags_Div' , Null , 'class=Divitem Box'  , 'Tags_Select' , $SelectItem_Array , 'type=text' , 'name=item' , 'required' );
@@ -26,6 +25,5 @@
 	$LoginPicture_Str = PrintHtmlLanguageArray_Fun( $LoginPicture_Array );//	
 	$LoginPicture2 = Array( 'Tags_Div' , $LoginPicture_Str , 'class=LoginPicture2' );
 	$BodyHtmlFormt_Str = PrintHtmlLanguageArray_Fun( $LoginPicture2 );//
-	//$BodyHtmlFormt_Str = PrintHtmlLanguageArray_Fun( $LoginArray );
 	echo ExportHtmlPage_Fun( $BodyHtmlFormt_Str );  //輸出Html字串Page  "NoLoginPicture"
 ?>

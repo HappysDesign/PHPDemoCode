@@ -30,7 +30,6 @@
 		}else if ( !empty( $BodyHtml_Str ) ){
 			$CSSDir = "\CSS";
 			$JavaScriptDir = "\JavaScript";
-			//echo __DIR__.$CSSDir;
 			if ( file_exists( __DIR__.$CSSDir ))  //本層資料夾路徑
 			{
 				$CSSDir = "/CSS";
